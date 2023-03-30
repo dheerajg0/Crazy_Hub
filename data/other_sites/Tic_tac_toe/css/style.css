@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    font-size: 3vw;
+    padding: 0px 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+}
+nav ul li img{
+    width: 2.8vw;
+}
+.gameContainer{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    margin: 50px;
+    position: relative;
+}
+.box{
+    border: 3px solid black;
+    font-size: 10vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(208, 186, 229);
+}
+.gameInfo{
+    margin: 50px;
+    padding: 20px;
+}
+.gameInfo h1{
+    font-size: 3vw;
+}
+.info{
+    font-size: 2vw;
+}
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+    margin: 0px 23px;
+    padding: 5px 20px;
+    background-color: rgb(219, 193, 244);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+    background-color: rgb(116, 60, 169);
+    border-radius: 10px;
+}
+/* Utility Classes */
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 3vw;
+    }
+}

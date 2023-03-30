@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+#container{
+    width: 80%;
+    margin: 40px auto;
+}
+nav{
+    background-color: black;
+}
+.container-fluid>img{
+    width: 2em;
+}
+.container-fluid>a{
+    color: white;
+    margin-left: 20px;
+}
+#navbarSupportedContent>ul>li>a{
+    color: white !important;
+}
+.container-fluid>button{
+    filter: invert();
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: pink;
+}
+main{
+    margin: 50px auto;
+    width: 80%;
+}
+#optionBox{
+    display: grid;
+    grid-template-columns:repeat(3, 26vw);
+    grid-template-rows:repeat(2, 20vh);
+    border: 2px solid black;
+    padding: 10px;
+}
+.div_options{
+    border: 2px solid black;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.div_options:hover{
+    background: black;
+    color: white;
+}
+#welcome_heading{
+    display: flex;
+    justify-content: center;
+}

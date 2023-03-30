@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+nav{
+    background-color: black;
+}
+.navbar-brand{
+    color: white;
+}
+#heading1{
+    margin: 20px auto;
+    text-align: center;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+#alarmMessage{
+    text-align: center;
+    font-size: 50px;
+}
